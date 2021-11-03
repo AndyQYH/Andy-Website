@@ -1,0 +1,644 @@
+
+/*html reset style sheet for different browsers
+  compatible with Chrome, Firefox, Microsoft Edge, Internet Explorerer, etc.
+*/
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+body {
+    line-height:1;
+}
+
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section {
+    display:block;
+}
+
+nav ul {
+    list-style:none;
+}
+
+blockquote, q {
+    quotes:none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content:'';
+    content:none;
+}
+
+a {
+    margin:0;
+    padding:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+/* change colours to suit your needs */
+ins {
+    background-color:#ff9;
+    color:#000;
+    text-decoration:none;
+}
+
+/* change colours to suit your needs */
+mark {
+    background-color:#ff9;
+    color:#000;
+    font-style:italic;
+    font-weight:bold;
+}
+
+del {
+    text-decoration: line-through;
+}
+
+abbr[title], dfn[title] {
+    border-bottom:1px dotted;
+    cursor:help;
+}
+
+table {
+    border-collapse:collapse;
+    border-spacing:0;
+}
+
+/* change border colour to suit your needs */
+hr {
+    display:block;
+    height:1px;
+    border:0;
+    border-top:1px solid #cccccc;
+    margin:1em 0;
+    padding:0;
+}
+
+input, select {
+    vertical-align:middle;
+}
+
+/*Actual Styling I made
+  Formatting of General Tags
+  intended styling: switch to drop down menu
+  if horizontal bar is not long enough for all categories
+*/
+*{
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  word-wrap: break-word;
+}
+
+h1{
+  width:100%;
+  font-size: 30px;
+  font-family: 'Song Myung', serif;
+}
+h2{
+  color:#8A836B ;
+  font-size: 25px;
+  /*background-color: rgb(250,201,171);
+
+      letter-spacing:
+      word-spacing:
+      line-height:
+  */
+}
+
+h3{
+  font-size: 22px;
+}
+
+p{
+  width: 100%;
+  color: black;
+  padding-bottom: 10px;
+  font-size: 20px;
+  /*background-color: rgb(0,0,0);*/
+}
+
+body{
+  margin: 0;
+  background-color: rgb(201,229,237);
+}
+
+div{
+  width: 100%;
+}
+
+header nav{
+  position: fixed;
+  width: 100%;
+  height: 100px;
+  padding:0 0;
+  background-color: rgb(97,106,117);
+  z-index: 3;
+}
+
+header nav ul{
+  display: block;
+  margin: 0 auto;
+
+}
+
+header nav ul li{
+  list-style: none;
+  display:inline-block;
+  float:left;
+  padding: 20px 20px;
+  background-color: black;
+  line-height: 40px;
+}
+
+header nav ul li a{
+  display:block;
+  text-decoration:none;
+  font-size:24px;
+  font-style: bold;
+  font-family: 'Aleo', serif;
+  color: rgb(204,221,245);
+  padding: 10px 10px;
+
+}
+
+header nav ul li a:hover{
+  color: rgb(131,179,247);
+  border-width:10px;
+  border-radius: 5px;
+  box-shadow: 0 0 5px rgb(112,173,223),
+              0 0 5px rgb(107,213,223);
+}
+
+header nav ul li a:active{
+  color: rgb(146,205,224);
+}
+
+header nav ul li ul{
+  display: none;
+}
+
+header nav ul li:hover ul {
+  display: none;
+}
+
+header nav ul li ul li a{
+  padding: 0 10px;
+}
+
+header nav ul li ul li a:hover{
+  background-color: rgb(222,201,182);
+}
+
+footer{
+  width:calc(100% - 80px);
+  padding: 40px 40px;
+  margin-top: 20px;
+  background-color:rgb(97,106,117);
+  overflow:hidden;
+}
+
+footer ul{
+  width: fit-content;
+  float:left;
+  padding-left:20px;
+}
+
+footer ul li{
+  font-family: 'Aleo', serif;
+  font-size: 24px;
+  color: rgb(146,205,224);
+  display:block;
+  list-style: none;
+  padding-top: 10px;
+  margin:0 auto;
+}
+
+footer ul li a{
+  font-family: 'Aleo', serif;
+  font-size: 24px;
+  color: rgb(204,221,245);
+  line-height: 30px;
+  padding-right: 20px;
+  padding-top: 10px;
+  margin:0 auto;
+}
+
+footer ul li a:hover{
+  color: rgb(131,179,247);
+}
+
+main{
+  width: 100%;
+  padding-top:100px;
+}
+
+/*formatting of classes and Ids*/
+
+
+/*Background Page Styling
+-------------------------------*/
+
+.background-links{
+  display:flex;
+  overflow:hidden;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+
+.background-links .bg-wrapper div{
+  float: left;
+  width: 310px;
+  height:310px;
+  margin: 20px 0px 0px 20px;
+  background-color: rgb(187,216,234);
+
+
+}
+
+.background-links .bg-wrapper h2{
+  margin-left: 20px;
+  //padding-left: 20px;
+}
+
+.background-links .bg-wrapper p{
+  padding-top: 45%;
+  font-family: 'Aleo', serif;
+  font-size: 28px;
+  color: rgb(52,75,87);
+  text-align: center;
+}
+
+
+.bg-wrapper {
+  width: 1000px;
+  margin: 0 auto;
+}
+
+.bg-wrapper div::after{
+  content: "";
+  display:block;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  background-position: bottom;
+  background-size: cover;
+  opacity:0.05;
+  z-index: 1;
+
+  transition: all 1s ease-in-out 0.25s;
+  -webkit-transition: all 1s ease-in-out 0.25s;
+  -moz-transition: all 1s ease-in-out 0.25s;
+  -o-transition: all 1s ease-in-out 0.25s;
+
+}
+
+.bg-wrapper div:hover::after{
+  opacity: 0.6;
+}
+
+.identity-block{
+  position: relative;
+  justify-content: center;
+}
+
+.identity-block p{
+  position:relative;
+  z-index: 2;
+}
+
+
+.identity-block::after{
+  background: url(images/Andy_identity.jpg);
+}
+
+.family-block{
+  position: relative;
+  justify-content: center;
+}
+
+.family-block p{
+  position:relative;
+  z-index: 2;
+}
+
+
+.family-block::after{
+
+  background: url(images/Andy_young.jpg);
+}
+
+.hobby-block{
+  position: relative;
+  justify-content: center;
+}
+
+.hobby-block p{
+  position:relative;
+  z-index: 2;
+}
+
+
+.hobby-block::after{
+  background: url(images/Andy_snowboard.jpg);
+}
+
+.food-block{
+  position: relative;
+  justify-content: center;
+}
+
+.food-block p{
+  position:relative;
+  z-index: 2;
+}
+
+
+.food-block::after{
+  background: url(images/Andy_food.jpg);
+}
+
+.movie-block{
+  position: relative;
+  justify-content: center;
+}
+
+.movie-block p{
+  position:relative;
+  z-index: 2;
+}
+
+
+.movie-block::after{
+  background: url(images/Andy_movie.jpg);
+}
+
+.memory-block{
+  position: relative;
+  justify-content: center;
+}
+
+.memory-block p{
+  position:relative;
+  z-index: 2;
+}
+
+
+.memory-block::after{
+  background: url(images/Andy_memory.jpg);
+}
+
+
+/*-----------------------------*/
+
+/*Identity Block Styling*/
+/*-----------------------------*/
+
+.identity h2{
+  text-align: center;
+  padding-top: 20px;
+}
+.identity h3{
+  text-align: center;
+  padding-left: 20px;
+}
+
+.identity p{
+  text-align: center;
+  padding-left: 20px;
+}
+
+.identity iframe{
+  display: block;
+  margin: 0 auto;
+  padding: 20px 0;
+}
+
+.id-wrapper{
+  width:1000px;
+  margin: 0 auto;
+}
+
+
+
+/*-----------------------------*/
+
+
+/*Skills Page styling*/
+/*-----------------------------*/
+.gallery-links{
+  display: flex;
+  flex-flow: row wrap;
+  justify-content:center;
+}
+
+.gallery-img{
+  flex-basis: 300px;
+  margin: 10px;
+}
+
+.gallery-img img{
+  width: 100%;
+
+}
+/*-----------------------------*/
+
+
+/*Education Page Styling*/
+/*-----------------------------*/
+.education-grid {
+
+  display:grid;
+  grid-template-columns: 1fr 400px 400px 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  grid-template-areas:
+  ". title title ."
+  ". header header ."
+}
+
+.education-grid div:nth-child(even){
+  background-color: rgb(107,249,119);
+}
+
+.education-grid div:nth-child(odd){
+  background-color: rgb(247,153,119);
+}
+
+.title{
+  grid-area: title;
+}
+
+.header{
+  grid-area: header;
+}
+
+#content{
+  height: 500px;
+  width: 100%;
+}
+
+
+/*-----------------------------*/
+.home-info{
+  width: calc(100% - 40px);
+}
+
+.home-info h2{
+  font-family: 'Mate SC', serif;
+  padding:  20px 20px;
+  line-height:100%;
+}
+
+.home-info p{
+  font-family: 'Aleo', serif;
+  padding: 20px 20px;
+  line-height:125%;
+}
+
+.home-info h5{
+  font-size:16px
+  font-family: 'Aleo', serif;
+  padding: 20px 20px;
+}
+
+.index-banner{
+  width:200px;
+  height: 200px;
+  border-radius: 50%;
+  margin: 0 auto;
+  background-image: url(images/Andy_profile_pic.jpg);
+  background-size:110%;
+  background-repeat: no-repeat;
+  background-position:center;
+  border-width: 8px;
+  border-style: solid;
+  border-color: #8A836B;
+
+  display:table;
+}
+
+.index-intro h1{
+  font-size:25px;
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  color: rgb(17,51,97);
+
+}
+
+.index-intro h2{
+  font-size: 35px;
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  color: rgb(63,82,97);
+
+}
+
+.vertical-center{
+  display:table-cell;
+}
+
+.index-banner h2{
+  font-size: 30px;
+  color:rgb(26,92,133);
+  text-align: center;
+  padding-top: 2%;
+}
+
+.footer-links-cases a{
+  text-decoration: underline;
+}
+
+.footer-sm {
+  width: 40px;
+  float: right;
+}
+
+.footer-sm img{
+  width: 100%;
+  border-radius: 50%;
+  margin-bottom:10px ;
+}
+
+.footer-sm img:hover{
+  background-color: rgb(131,179,247);
+}
+
+.dropdown-button{
+  display:none;
+}
+/*change of webpage display for smaller device user*/
+@media only screen and (max-width: 950px){
+
+  header nav ul li{
+    display:none;
+    position: relative;
+    float:left;
+    padding: 0;
+  }
+
+  .dropdown-button{
+    display: block;
+    float: right;
+    padding: 20px 20px;
+  }
+
+
+  header nav ul li ul{
+    display: none;
+    position: absolute;
+    background-color: white;
+    padding: 2px;
+    border-radius: 0px, 0px, 5px, 5px;
+    transition: top .3s;
+  }
+
+  header nav ul li:hover ul {
+    display: block;
+    position: absolute;
+  }
+
+  header nav ul li ul li a{
+    padding: 0 10px;
+  }
+
+  header nav ul li ul li a:hover{
+    background-color: rgb(222,201,182);
+  }
+
+.fa-plus{
+    margin: 0 0 0 20px;
+    font-size: 25px;
+    font-style:bold;
+  }
+
+}
+@media only screen and (max-width: 720px){
+  .gallery-img {
+    flex-basis: 90%;
+  }
+}
